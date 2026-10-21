@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffbfe">
+  <title>Конструктор технического задания — каталог мастеров</title>
+  <style>
+    :root{color-scheme:light;--page:#fffbfe;--surface:#f3edf7;--surface-low:#e7e0ec;--ink:#1c1b1f;--muted:#49454f;--line:#cac4d0;--primary:#6750a4;--primary-dark:#513a8d;--primary-soft:#e8def8;--tertiary:#7d5260;--danger:#b3261e;--success:#386a20;--shadow:0 2px 10px rgba(29,25,43,.07);--font:Roboto,Arial,sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--page);color:var(--ink);font:15px/1.55 var(--font)}button,input,textarea{font:inherit}button,a,input,textarea{-webkit-tap-highlight-color:transparent}:focus-visible{outline:3px solid var(--primary);outline-offset:3px}.shell{width:min(1240px,calc(100% - 40px));margin:0 auto}.topbar{position:sticky;top:0;z-index:5;border-bottom:1px solid rgba(121,116,126,.18);background:rgba(255,251,254,.94);backdrop-filter:blur(14px)}.nav{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.025em}.mark{width:36px;height:36px;display:grid;place-items:center;border-radius:14px;color:white;background:var(--primary);font-size:18px}.nav-note{color:var(--muted);font-size:13px}.hero{position:relative;overflow:hidden;margin:30px 0 22px;padding:36px 40px;border-radius:32px;background:radial-gradient(circle at 90% 10%,rgba(208,188,255,.55),transparent 35%),radial-gradient(circle at 12% 110%,rgba(232,183,200,.28),transparent 33%),var(--surface)}.eyebrow{margin-bottom:9px;color:var(--tertiary);font-size:11px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}h1,h2,h3,p{margin-top:0}h1{max-width:810px;margin-bottom:12px;font-size:clamp(30px,4vw,46px);line-height:1.08;letter-spacing:-.05em}.hero p{max-width:780px;margin:0;color:var(--muted);font-size:16px}.layout{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(350px,.82fr);align-items:start;gap:22px;margin-bottom:50px}.left{display:grid;gap:16px}.panel{padding:22px;border-radius:24px;background:var(--surface);box-shadow:var(--shadow)}.panel-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px}.panel h2{margin:0;font-size:20px;line-height:1.25;letter-spacing:-.025em}.step{display:inline-grid;place-items:center;flex:none;width:28px;height:28px;margin-right:8px;border-radius:10px;background:var(--primary-soft);color:var(--primary);font-size:12px;font-weight:750}.help{margin:5px 0 0;color:var(--muted);font-size:13px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field-wrap.full{grid-column:1/-1}.field-wrap label{display:block;margin-bottom:6px;color:var(--muted);font-size:13px;font-weight:650}.field{width:100%;min-height:46px;padding:11px 13px;border:1px solid var(--line);border-radius:13px;background:var(--page);color:var(--ink)}textarea.field{min-height:82px;resize:vertical}.preset-row{display:flex;flex-wrap:wrap;gap:9px;margin:15px 0 0}.btn{display:inline-flex;min-height:42px;align-items:center;justify-content:center;gap:8px;padding:9px 15px;border:1px solid transparent;border-radius:999px;cursor:pointer;font-weight:650;transition:background .18s,transform .18s}.btn:hover{transform:translateY(-1px)}.btn:active{transform:scale(.98)}.btn-primary{color:#fff;background:var(--primary)}.btn-primary:hover{background:var(--primary-dark)}.btn-outline{color:var(--primary);border-color:var(--line);background:transparent}.btn-outline:hover{background:rgba(103,80,164,.08)}.btn-quiet{min-height:34px;padding:6px 10px;color:var(--primary);background:transparent;font-size:13px}.count{align-self:center;color:var(--muted);font-size:12px}.groups{display:grid;gap:11px}.group{overflow:hidden;border:1px solid rgba(121,116,126,.2);border-radius:18px;background:rgba(255,251,254,.74)}.group-title{display:flex;align-items:center;gap:10px;min-height:54px;padding:12px 14px;background:rgba(232,222,248,.45);cursor:pointer}.group-title strong{flex:1;font-size:14px}.group-title small{color:var(--muted);font-size:11px}.check{width:19px;height:19px;flex:none;accent-color:var(--primary);cursor:pointer}.items{display:grid;grid-template-columns:1fr 1fr;gap:0 14px;padding:4px 14px 12px}.item{display:flex;align-items:flex-start;gap:9px;padding:8px 0;color:var(--ink);font-size:13px;cursor:pointer}.item span{display:block}.item small{display:block;margin-top:2px;color:var(--muted);font-size:11px;line-height:1.35}.item input{margin-top:2px}.output{position:sticky;top:88px;overflow:hidden;border:1px solid rgba(121,116,126,.2);border-radius:24px;background:#fff;box-shadow:var(--shadow)}.output-head{padding:19px 20px 14px;background:var(--surface)}.output-title-row{display:flex;align-items:center;justify-content:space-between;gap:10px}.output h2{margin:0;font-size:19px}.live{display:flex;align-items:center;gap:6px;color:var(--success);font-size:11px;font-weight:650}.live:before{content:"";width:7px;height:7px;border-radius:50%;background:#52923b}.output-sub{margin:6px 0 0;color:var(--muted);font-size:12px}.preview{height:min(61vh,650px);min-height:330px;overflow:auto;padding:19px 20px;white-space:pre-wrap;color:#29272e;font:12px/1.55 var(--font);overflow-wrap:anywhere}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;padding:14px 18px 18px;border-top:1px solid rgba(121,116,126,.18);background:#fff}.actions .btn:first-child{grid-column:1/-1}.hint{margin:0;padding:0 18px 14px;color:var(--muted);font-size:11px}.toast{position:fixed;right:20px;bottom:20px;z-index:10;max-width:min(420px,calc(100% - 40px));padding:12px 16px;border-radius:14px;color:white;background:#302d36;box-shadow:0 5px 22px rgba(0,0,0,.2);opacity:0;transform:translateY(10px);pointer-events:none;transition:.2s}.toast.show{opacity:1;transform:translateY(0)}.footer{padding:0 0 28px;color:var(--muted);font-size:12px}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:900px){.layout{grid-template-columns:1fr}.output{position:static;grid-row:1}.preview{height:380px}.hero{padding:30px}.nav-note{display:none}}
+    @media(max-width:580px){.shell{width:min(100% - 24px,1240px)}.hero{margin-top:17px;padding:25px 21px;border-radius:24px}.panel{padding:17px;border-radius:20px}.field-grid,.items{grid-template-columns:1fr}.field-wrap.full{grid-column:auto}.panel-head{margin-bottom:12px}.layout{gap:14px}.preview{min-height:280px;height:330px}.actions{padding:12px}.actions .btn{font-size:13px;padding:8px 10px}.group-title{padding:11px}.count{max-width:120px;text-align:right}}
+    @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="shell nav"><div class="brand"><span class="mark" aria-hidden="true">✳</span><span>Конструктор ТЗ</span></div><span class="nav-note">Каталог мастеров массажа · рабочий черновик</span></div></header>
+  <main class="shell">
+    <section class="hero"><div class="eyebrow">Соберите требования к проекту</div><h1>Выберите, что должно быть в вашем сервисе</h1><p>Отметьте нужные разделы и функции. Справа сразу соберётся короткое техническое задание — его можно скачать, скопировать или отправить партнёру.</p></section>
+    <div class="layout">
+      <div class="left">
+        <section class="panel" aria-labelledby="about-title"><div class="panel-head"><div><h2 id="about-title"><span class="step">1</span>О проекте</h2><p class="help">Эти сведения попадут в начало документа.</p></div></div>
+          <div class="field-grid">
+            <div class="field-wrap"><label for="projectName">Название проекта</label><input id="projectName" class="field" maxlength="100" value="Каталог мастеров массажа" placeholder="Например, Massage City"></div>
+            <div class="field-wrap"><label for="geo">Город / география</label><input id="geo" class="field" maxlength="120" placeholder="Например, Минск; несколько городов"></div>
+            <div class="field-wrap full"><label for="goal">Главная бизнес-задача</label><textarea id="goal" class="field" maxlength="500" placeholder="Какую задачу проект должен решать для бизнеса и пользователей?">Помочь клиентам находить подходящих мастеров массажа и связываться с ними напрямую. Подготовить основу для постепенного расширения и монетизации проекта.</textarea></div>
+          </div>
+        </section>
+        <section class="panel" aria-labelledby="scope-title"><div class="panel-head"><div><h2 id="scope-title"><span class="step">2</span>Функциональность</h2><p class="help">Выберите направления целиком или отметьте отдельные подпункты.</p></div><span class="count" id="count" aria-live="polite"></span></div>
+          <div class="preset-row"><button class="btn btn-outline" type="button" id="presetMvp">Базовый MVP</button><button class="btn btn-quiet" type="button" id="clearAll">Снять все отметки</button></div>
+          <div class="groups" id="groups" style="margin-top:15px"></div>
+        </section>
+        <section class="panel" aria-labelledby="notes-title"><div class="panel-head"><div><h2 id="notes-title"><span class="step">3</span>Дополнительные пожелания</h2><p class="help">Необязательные ограничения или приоритеты заказчика.</p></div></div><div class="field-wrap"><label for="notes">Комментарий к проекту</label><textarea id="notes" class="field" maxlength="800" placeholder="Например: сначала запустить один город, затем подключить остальные."></textarea></div></section>
+      </div>
+      <aside class="output" aria-label="Сформированное техническое задание"><div class="output-head"><div class="output-title-row"><h2>Черновик технического задания</h2><span class="live">Обновляется</span></div><p class="output-sub">В документ попадут только выбранные функции.</p></div><pre class="preview" id="preview" aria-live="polite"></pre><div class="actions"><button class="btn btn-primary" id="download" type="button">↓　Скачать ТЗ в .txt</button><button class="btn btn-outline" id="copy" type="button">Скопировать текст</button><button class="btn btn-outline" id="share" type="button">Поделиться</button></div><p class="hint">Поделиться откроет меню отправки на устройстве, если браузер его поддерживает.</p></aside>
+    </div>
+    <footer class="footer">Черновик формируется в браузере. Перед оценкой разработки согласуйте состав функций, юридические тексты, правила размещения и критерии приёмки.</footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    const groupsData = [
+      {id:'public',title:'Публичный сайт и каталог',items:[
+        ['home','Главная страница с поиском по городу, району и виду массажа',true],['catalog','Каталог опубликованных мастеров и карточки результатов',true],['geoFilter','Фильтры: страна, город, район и метро',true],['profileFilters','Фильтры: возраст и пол мастера',true],['serviceFilter','Фильтр по услугам и видам массажа',true],['priceFilter','Фильтр по цене и стоимости стандартного часа',true],['formatFilter','Фильтры: принимает у себя, выезжает, работает сегодня',true],['verifiedFilter','Фильтр «Только подтверждённые»',true],['sorting','Сортировка: рекомендованные, цена, новые, TOP',true],['todayBlock','Блок «Сегодня работают»',true],['topBlock','Блок TOP-мастеров',true]
+      ]},
+      {id:'profile',title:'Анкета и страница мастера',items:[
+        ['masterPage','Отдельная публичная страница мастера с человекопонятным адресом',true],['masterFacts','Имя/псевдоним, возраст, город, район и формат работы',true],['gallery','Фотогалерея с просмотром увеличенного изображения',true],['servicesPrices','Услуги, длительность и цены; базовая цена за 60 минут',true],['schedule','Недельный график и отметка «Сегодня работает»',true],['contacts','Кнопки звонка, Telegram и WhatsApp',true],['contactAnalytics','Подсчёт показов телефона и нажатий на способы связи',true],['complaint','Форма жалобы на анкету с выбором причины',true]
+      ]},
+      {id:'account',title:'Кабинет мастера',items:[
+        ['registration','Регистрация и вход мастера по email',true],['profileEditor','Создание и редактирование анкеты',true],['photoEditor','Загрузка и удаление фотографий с лимитами',true],['priceEditor','Редактор услуг и прайс-листа',true],['scheduleEditor','Настройка рабочих дней и времени',true],['contactsEditor','Редактирование телефона и ссылок для связи',true],['moderationStatus','Статусы анкеты и причина возврата на исправление',true],['hideProfile','Возможность временно скрыть опубликованную анкету',true]
+      ]},
+      {id:'admin',title:'Администрирование и модерация',items:[
+        ['adminPanel','Защищённая административная панель и роли',true],['moderationQueue','Очереди новых и изменённых анкет',true],['decisions','Одобрение, возврат на исправление, скрытие и блокировка',true],['reports','Просмотр жалоб и история нарушений',true],['taxonomy','Управление категориями массажа, городами и районами',true],['badges','Назначение статусов TOP и «Подтверждённый мастер»',true],['settings','Управление лимитами фотографий и контентом главной',true],['audit','Журнал действий администраторов и модераторов',true]
+      ]},
+      {id:'seo',title:'Поисковая подготовка и аналитика',items:[
+        ['seoPages','Индексируемые страницы мастеров, городов и категорий',true],['seoMeta','Title, Description, H1, canonical и Open Graph',true],['seoFiles','Sitemap.xml, robots.txt, пагинация и Schema.org',true],['seoSpeed','Адаптивная мобильная версия и оптимизация изображений',true],['analytics','Подключение аналитики посещений и обращений',true],['legalPages','Страницы правил, контактов, FAQ и политик (тексты предоставляет заказчик)',true]
+      ]},
+      {id:'safety',title:'Безопасность и защита данных',items:[
+        ['https','HTTPS, безопасная загрузка изображений и проверка типов файлов',true],['captcha','Защита форм от спама и ограничение частых запросов',true],['backups','Резервное копирование базы и пользовательских изображений',true],['admin2fa','Двухфакторный вход для администраторов',true],['privacy','Разделение публичных данных, данных кабинета и модерации',true]
+      ]},
+      {id:'modules',title:'Дополнительные модули для следующих этапов',items:[
+        ['favorites','Избранное и аккаунт клиента',false],['reviews','Отзывы и рейтинг с премодерацией',false],['paidListings','Платные тарифы, TOP/VIP-размещение и поднятие анкет',false],['placementPay','Приём оплаты за размещение и продвижение анкет',false],['booking','Онлайн-запись и календарь доступности',false],['chat','Внутренний чат клиента и мастера',false],['multiCountry','Несколько стран, расширенная география и зоны выезда',false],['maps','Поиск по карте и расстоянию',false],['aiModeration','Автоматическая предварительная проверка текстов и фото',false],['mobileApp','Отдельное мобильное приложение',false]
+      ]}
+    ];
+    const groupsEl=document.getElementById('groups');
+    const previewEl=document.getElementById('preview');
+    const countEl=document.getElementById('count');
+    const toastEl=document.getElementById('toast');
+    let toastTimer;
+    function escapeHtml(value){return String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+    function buildGroups(){groupsEl.innerHTML=groupsData.map(group=>`<section class="group" data-group="${group.id}"><label class="group-title"><input class="check parent-check" type="checkbox" aria-label="Выбрать все функции: ${escapeHtml(group.title)}"><strong>${escapeHtml(group.title)}</strong><small>${group.items.length} функций</small></label><div class="items">${group.items.map(([id,label,checked])=>`<label class="item"><input class="check feature-check" type="checkbox" data-id="${id}" ${checked?'checked':''}><span>${escapeHtml(label)}</span></label>`).join('')}</div></section>`).join('');
+      groupsEl.querySelectorAll('.parent-check').forEach(parent=>parent.addEventListener('change',()=>{parent.closest('.group').querySelectorAll('.feature-check').forEach(child=>child.checked=parent.checked);update()}));
+      groupsEl.querySelectorAll('.feature-check').forEach(child=>child.addEventListener('change',update));
+      update();
+    }
+    function selectedIds(){return [...document.querySelectorAll('.feature-check:checked')].map(el=>el.dataset.id)}
+    function updateParents(){document.querySelectorAll('.group').forEach(group=>{const children=[...group.querySelectorAll('.feature-check')];const parent=group.querySelector('.parent-check');const n=children.filter(c=>c.checked).length;parent.checked=n===children.length;parent.indeterminate=n>0&&n<children.length;parent.setAttribute('aria-checked',parent.indeterminate?'mixed':String(parent.checked))})}
+    function generateText(){
+      const name=document.getElementById('projectName').value.trim()||'Проект без названия';
+      const geo=document.getElementById('geo').value.trim();
+      const goal=document.getElementById('goal').value.trim();
+      const notes=document.getElementById('notes').value.trim();
+      const selected=new Set(selectedIds());
+      const lines=[`МИНИМАЛЬНОЕ ТЕХНИЧЕСКОЕ ЗАДАНИЕ`,`Проект: ${name}`];
+      if(geo)lines.push(`География: ${geo}`);
+      lines.push('',`1. Цель проекта`,goal||'Цель и ожидаемый бизнес-результат уточняются с заказчиком.');
+      lines.push('',`2. Состав проекта`);
+      let section=2;
+      groupsData.forEach(group=>{
+        const items=group.items.filter(([id])=>selected.has(id));
+        if(!items.length)return;
+        section++;
+        lines.push('',`${section}. ${group.title}`);
+        items.forEach(([,label])=>lines.push(`• ${label}`));
+      });
+      lines.push('',`${section+1}. Границы и согласование`,`• Оплата массажных услуг между клиентом и мастером проходит напрямую; онлайн-оплата услуг в этот документ не включена.`,`• Юридические тексты и правила размещения предоставляются или утверждаются заказчиком.`,`• Детальные сценарии и критерии приёмки согласуются до начала разработки.`);
+      if(notes)lines.push('',`${section+2}. Дополнительные пожелания`,notes);
+      lines.push('',`Состав функций сформирован заказчиком в конструкторе. Перед оценкой и разработкой стороны уточняют детали сценариев, критерии приёмки, состав данных и интеграции.`);
+      return lines.join('\n');
+    }
+    function update(){updateParents();const selected=selectedIds().length;const total=document.querySelectorAll('.feature-check').length;countEl.textContent=`Выбрано ${selected} из ${total}`;previewEl.textContent=generateText();}
+    function toast(message){toastEl.textContent=message;toastEl.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>toastEl.classList.remove('show'),2600)}
+    function filename(){let value=(document.getElementById('projectName').value||'technical-brief').trim().toLowerCase().replace(/[^a-zа-яё0-9]+/gi,'-').replace(/^-|-$/g,'');return (value||'technical-brief')+'-tz.txt'}
+    async function copyText(text){try{await navigator.clipboard.writeText(text);toast('Текст технического задания скопирован.')}catch{const area=document.createElement('textarea');area.value=text;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();const ok=document.execCommand('copy');area.remove();toast(ok?'Текст технического задания скопирован.':'Не удалось скопировать. Выделите текст в окне черновика.')}}
+    document.getElementById('download').addEventListener('click',()=>{const blob=new Blob(['\ufeff'+generateText()],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=filename();a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Файл ТЗ скачан.')});
+    document.getElementById('copy').addEventListener('click',()=>copyText(generateText()));
+    document.getElementById('share').addEventListener('click',async()=>{const text=generateText();if(navigator.share){try{await navigator.share({title:'Техническое задание: '+(document.getElementById('projectName').value||'проект'),text});toast('Окно отправки открыто.')}catch(err){if(err.name!=='AbortError')toast('Не удалось открыть меню отправки.')}}else{await copyText(text)}});
+    document.getElementById('presetMvp').addEventListener('click',()=>{document.querySelectorAll('.feature-check').forEach(el=>{const item=groupsData.flatMap(g=>g.items).find(([id])=>id===el.dataset.id);el.checked=Boolean(item&&item[2])});update();toast('Выбран базовый MVP из исходного ТЗ.')});
+    document.getElementById('clearAll').addEventListener('click',()=>{document.querySelectorAll('.feature-check').forEach(el=>el.checked=false);update();toast('Все функции сняты.')});
+    ['projectName','geo','goal','notes'].forEach(id=>document.getElementById(id).addEventListener('input',update));
+    buildGroups();
+  </script>
+</body>
+</html>
